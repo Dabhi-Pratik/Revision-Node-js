@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EJS CRUD</title>
+</head>
+<body>
+
+    <h1>This is Student List</h1>
+
+    <!-- Link to open add form -->
+    <a href="/add">ADD NAME</a>
+
+    <br><br>
+
+    <ul>
+
+        <!-- Loop through studentList array -->
+        <% studentList.forEach((e) => { %>
+
+            <!-- Display student name -->
+            <li><%= e.name %></li>
+
+        <% }) %>
+
+    </ul>
+
+</body>
+</html>
